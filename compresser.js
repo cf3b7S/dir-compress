@@ -14,8 +14,6 @@ exec = require('child_process').exec;
 
 os = require('os');
 
-console.log(os.platform());
-
 module.exports = {
     compress: function(options) {
         var count, exclude, isDir, jsArr, minify, modulePath, newRootPath, rootPath, walk, _ref;
