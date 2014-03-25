@@ -1,0 +1,14 @@
+{
+    "name": "dir-compress",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node compresser.js"
+    },
+    "dependencies": {
+        "async": "*",
+        "uglify-js": "*",
+        "fs-extra": "*",
+        "underscore": "*"
+    }
+}
