@@ -1,14 +1,31 @@
 {
     "name": "dir-compress",
     "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "start": "node compresser.js"
-    },
+    "description": "compress your entire project",
+    "main": "compresser.js",
     "dependencies": {
-        "async": "*",
-        "uglify-js": "*",
-        "fs-extra": "*",
-        "underscore": "*"
-    }
+        "fs-extra": "~0.8.1",
+        "async": "~0.2.10",
+        "underscore": "~1.6.0",
+        "uglify-js": "~2.4.13"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/khowarizmi/dir-compress.git"
+    },
+    "keywords": [
+        "compress",
+        "dir",
+        "folder"
+    ],
+    "author": "khowarizmi",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/khowarizmi/dir-compress/issues"
+    },
+    "homepage": "https://github.com/khowarizmi/dir-compress"
 }
