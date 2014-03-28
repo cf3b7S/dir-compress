@@ -17,3 +17,5 @@ compresser.compress({
 })
 ```
 
+if you use coffee, dir-compress will automatic remove the coffee files
+

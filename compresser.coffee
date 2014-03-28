@@ -49,6 +49,9 @@ module.exports = {
 						else if ~file.indexOf('.js') and !~file.indexOf('.json') and !~file.indexOf('.min.js')
 							jsPath = path.join(newRootPath, file)
 							jsArr.push(jsPath)
+						else if ~file.indexOf('.coffee')
+							coffeePath = path.join(newRootPath, file)
+							fs.removeSync(coffeePath)
 					)
 
 			fs.copySync(rootPath, newRootPath)
