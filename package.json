@@ -1,31 +1,40 @@
 {
-    "name": "dir-compress",
-    "version": "0.0.1",
-    "description": "compress your entire project",
-    "main": "compresser.js",
-    "dependencies": {
-        "fs-extra": "~0.8.1",
-        "async": "~0.2.10",
-        "underscore": "~1.6.0",
-        "uglify-js": "~2.4.13"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/khowarizmi/dir-compress.git"
-    },
-    "keywords": [
-        "compress",
-        "dir",
-        "folder"
-    ],
-    "author": "khowarizmi",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/khowarizmi/dir-compress/issues"
-    },
-    "homepage": "https://github.com/khowarizmi/dir-compress"
+  "name": "compresser",
+  "version": "0.0.7",
+  "description": "compress your entire project",
+  "main": "compresser.js",
+  "dependencies": {
+    "fs-extra": "~0.8.1",
+    "async": "~0.2.10",
+    "lodash": "*",
+    "uglify-js": "~2.4.13"
+  },
+  "bin": {
+    "compresser": "./bin/compresser.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/khowarizmi/dir-compress.git"
+  },
+  "keywords": [
+    "compress",
+    "dir",
+    "folder"
+  ],
+  "author": {
+    "name": "khowarizmi"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khowarizmi/dir-compress/issues"
+  },
+  "homepage": "https://github.com/khowarizmi/dir-compress",
+  "readme": "dir-compress\n============\n### about\ndir-compress use [uglify-js](https://github.com/mishoo/UglifyJS2) to you compress you entire project \n\n### how to use\n```\nnpm install dir-compress\n```\n\n```\nvar compresser = require('dir-compress');\ncompresser.compress({\n    rootPath: 'folder want to be compressed',\n    newRootPath: 'new dir root',\n    exclude: ['/folder'] //this path is relative to rootPath, which will not be compressed\n})\n```\n\nif you use coffee, dir-compress will automatic remove the coffee files\n\n",
+  "readmeFilename": "README.md",
+  "_id": "compresser@0.0.7",
+  "_from": "compresser@"
 }
